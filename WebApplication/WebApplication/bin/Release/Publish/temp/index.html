@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/site.css">
+    <title>天神世界</title>
+    <script src="js/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+
+        <div id="download" class="mask" style="display: none;">
+            <div class="dialog-download">
+                <span class="close-g" onclick="setIdDisplay('download','none')"></span>
+                <img class="game-avatar" src="../img/applogo.png" />
+                <h2>下載天神世界<br>立刻開啟你的躺賺之旅</h2>
+                <div class="down-btn">
+                    <button></button>
+                    <p>請到APP領取獎勵</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="fb-like" data-href="https://www.facebook.com/DeityOfLegend/" data-width=""
+            data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+        <div class="logo"><img src="img/logo.png"></div>
+        <div class="banner"></div>
+        <div id="rank1" class="board-list show dialog gogogo">
+            <h1 class="title"><img src="img/title.png"> 提現排行榜 <img src="img/title.png" class="right">
+                <span class="close" onclick="setIdDisplay('rank1','none')"></span>
+            </h1>
+            <table>
+                <tr>
+                    <th>排名</th>
+                    <th>用戶暱稱</th>
+                    <th>已提現金額</th>
+                </tr>
+                <tr>
+                    <td align="center"><img class="crown" src="img/no-1.png"></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/1.jpg">
+                        </div>
+                        <span class="name">張**</span>
+                    </td>
+                    <td align="right" class="text-money">$500.00</td>
+                </tr>
+                <tr>
+                    <td align="center"><img class="crown" src="img/no-2.png"></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/9.jpg">
+                        </div>
+                        <span class="name">任**</span>
+                    </td>
+                    <td align="right" class="text-money">$500.00</td>
+                </tr>
+                <tr>
+                    <td align="center"><img class="crown" src="img/no-3.png"></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/3.jpg">
+                        </div>
+                        <span class="name">Fang**</span>
+                    </td>
+                    <td align="right" class="text-money">$500.00</td>
+                </tr>
+                <tr>
+                    <td align="center"><span class="num">4</span></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/2.jpg">
+                        </div>
+                        <span class="name">Au****</span>
+                    </td>
+                    <td align="right" class="text-money">$500.00</td>
+                </tr>
+                <tr>
+                    <td align="center"><span class="num">5</span></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/4.jpg">
+                        </div>
+                        <span class="name">趙**</span>
+                    </td>
+                    <td align="right" class="text-money">$300.00</td>
+                </tr>
+                <tr>
+                    <td align="center"><span class="num">6</span></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/5.jpg">
+                        </div>
+                        <span class="name">尹**</span>
+                    </td>
+                    <td align="right" class="text-money">$300.00</td>
+                </tr>
+                <tr>
+                    <td align="center"><span class="num">7</span></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/6.jpg">
+                        </div>
+                        <span class="name">Va****</span>
+                    </td>
+                    <td align="right" class="text-money">$300.00</td>
+                </tr>
+                <tr>
+                    <td align="center"><span class="num">8</span></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/7.jpg">
+                        </div>
+                        <span class="name">陳**</span>
+                    </td>
+                    <td align="right" class="text-money">$300.00</td>
+                </tr>
+                <tr>
+                    <td align="center"><span class="num">9</span></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/8.jpg">
+                        </div>
+                        <span class="name">Jo****</span>
+                    </td>
+                    <td align="right" class="text-money">$300.00</td>
+                </tr>
+                <tr>
+                    <td align="center"><span class="num">10</span></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/10.jpg">
+                        </div>
+                        <span class="name">Ti****</span>
+                    </td>
+                    <td align="right" class="text-money">$200.00</td>
+                </tr>
+            </table>
+        </div>
+        <div id="rank2" class="board-list dialog gogogo">
+            <h1 class="title"><img src="img/title.png"> 好友排行榜 <img src="img/title.png" class="right">
+                <span class="close" onclick="setIdDisplay('rank2','none')"></span>
+            </h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>用戶暱稱</th>
+                        <th>已邀請好友</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td align="center"><img class="crown" src="img/no-1.png"></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/1.jpg">
+                        </div>
+                        <span class="name">張**</span>
+                    </td>
+                    <td align="right" class="text-buddy">5036人</td>
+                </tr>
+                <tr>
+                    <td align="center"><img class="crown" src="img/no-2.png"></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/11.jpg">
+                        </div>
+                        <span class="name">Li****</span>
+                    </td>
+                    <td align="right" class="text-buddy">4960人</td>
+
+                </tr>
+                <tr>
+                    <td align="center"><img class="crown" src="img/no-3.png"></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/12.jpg">
+                        </div>
+                        <span class="name">李**</span>
+                    </td>
+                    <td align="right" class="text-buddy">4703人</td>
+
+                </tr>
+                <tr>
+                    <td align="center"><span class="num">4</span></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/13.jpg">
+                        </div>
+                        <span class="name">Au****</span>
+                    </td>
+                    <td align="right" class="text-buddy">4701人</td>
+
+                </tr>
+                <tr>
+                    <td align="center"><span class="num">5</span></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/14.jpg">
+                        </div>
+                        <span class="name">陳**</span>
+                    </td>
+                    <td align="right" class="text-buddy">4518人</td>
+                </tr>
+                <tr>
+                    <td align="center"><span class="num">6</span></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/15.jpg">
+                        </div>
+                        <span class="name">王**</span>
+                    </td>
+                    <td align="right" class="text-buddy">4511人</td>
+                </tr>
+                <tr>
+                    <td align="center"><span class="num">7</span></td>
+                    <td>
+                        <div class="avatar"><img src="/avatar/16.jpg">
+                        </div>
+                        <span class="name">Ve****</span>
+                    </td>
+                    <td align="right" class="text-buddy">4510人</td>
+
+                </tr>
+            </table>
+        </div>
+        <div class="bottom">
+            <div class="board-button">
+                <ul>
+                    <li id="button1" class="tab-button" onclick="clickRank('1')"><i><img
+                                src="img/withdraw.png"></i>提現排行榜</li>
+                    <li id="button2" class="tab-button" onclick="clickRank('2')"><i><img src="img/buddy.png"></i>好友排行榜
+                    </li>
+                </ul>
+            </div>
+            <div class="fb-login">
+                <div id="fb-root">
+                    <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with"
+                        data-auto-logout-link="false" data-use-continue-as="true" onlogin="statusChangeCallback">
+                    </div>
+                </div>
+                <div id="ggg"
+                    style="display: none;width: 100%;color: aliceblue;text-align: center;font-size: 22px;line-height: 40px;"
+                    onclick="setIdDisplay('download', 'block')">下載天神世界APP</div>
+            </div>
+            <div class="tip"><img src="img/help.png">通過Facebook登入，與好友互動</div>
+        </div>
+    </div>
+</body>
+<script>
+    function setIdDisplay(id, active) {
+        document.getElementById(id).style.display = active;
+
+    }
+
+    function clickRank(idx) {
+        var order = idx == '1' ? '2' : '1';
+        setIdDisplay('rank' + idx, 'block');
+        setIdDisplay('rank' + order, 'none');
+        document.getElementById('button' + idx).className = 'tab-button active';
+        document.getElementById('button' + order).className = 'tab-button';
+    }
+
+
+
+    // This is called with the results from from FB.getLoginStatus().
+    function statusChangeCallback(response) {
+        console.log('statusChangeCallback');
+        console.log(response);
+        // The response object is returned with a status field that lets the
+        // app know the current login status of the person.
+        // Full docs on the response object can be found in the documentation
+        // for FB.getLoginStatus().
+        if (response.status === 'connected') {
+            // Logged into your app and Facebook.
+            testAPI(response);
+        } else if (response.status === 'not_authorized') {
+            // The person is logged into Facebook, but not your app.
+            // document.getElementById('status').innerHTML = 'Please log ' +
+            //     'into this app.';
+        } else {
+            // The person is not logged into Facebook, so we're not sure if
+            // they are logged into this app or not.
+            // document.getElementById('status').innerHTML = 'Please log ' +
+            //     'into Facebook.';
+        }
+    }
+
+
+    // This function is called when someone finishes with the Login
+    // Button.  See the onlogin handler attached to it in the sample
+    // code below.
+    function checkLoginState() {
+        FB.getLoginStatus(function (response) {
+            statusChangeCallback(response);
+        });
+    }
+
+
+
+
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '288950568740355',
+            status: true,
+            cookie: true,  // enable cookies to allow the server to access
+            // the session
+            xfbml: false,  // parse social plugins on this page
+            version: 'v6.0' // use graph api version 2.8
+        });
+
+
+        // document.getElementById('facebook').onclick = function () {//登录
+        //     FB.login(function (response) {
+        //         if (response.status === 'connected') {
+        //             $("#facebook").css("display", "none")
+        //             $("#fbLike").css("display", "block")
+        //             FB.api('/me', function (response) {
+        //                 roleName = encodeURIComponent(response.name);
+        //                 FB.getLoginStatus(function (response) {
+        //                     statusChangeCallback(response);
+        //                 });
+        //             });
+
+        //         } else {
+        //             console.log('该用户没有登录成功');
+        //         }
+        //     }, { scope: 'public_profile,email' });
+        // };
+        // Now that we've initialized the JavaScript SDK, we call
+        // FB.getLoginStatus().  This function gets the state of the
+        // person visiting this page and can return one of three states to
+        // the callback you provide.  They can be:
+        //
+        // 1. Logged into your app ('connected')
+        // 2. Logged into Facebook, but not your app ('not_authorized')
+        // 3. Not logged into Facebook and can't tell if they are logged into
+        //    your app or not.
+        //
+        // These three cases are handled in the callback function.
+
+        FB.getLoginStatus(function (response) {
+            statusChangeCallback(response,true);
+        });
+
+    };
+    function GetRequest() {
+        var url = location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+            var str = url.substr(1);
+            strs = str.split("&");
+            for (var i = 0; i < strs.length; i++) {
+                theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+            }
+        }
+        return theRequest;
+    }
+    // Load the SDK asynchronously
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        // js.src = "//connect.facebook.net/zh-TW/sdk.js";
+        js.src = "//connect.facebook.net/zh-TW/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    // Here we run a very simple test of the Graph API after login is
+    // successful.  See statusChangeCallback() for when this call is made.
+    function testAPI(loginInfo) {
+        setIdDisplay('download', 'block')
+        setIdDisplay('ggg', 'block')
+        setIdDisplay('fb-root', 'none')
+
+        FB.api(
+            '/me',
+            'GET',
+            { "fields": "id,picture" },
+            function (response) {
+                console.log(response)
+                var urlParam = GetRequest();
+                if (urlParam.invite) {
+
+                    var urlData = {
+                        facebookHeadUrl: response.picture.data.url,
+                        facebookNickName: response.name,
+                        inviteCode: urlParam.invite,
+                        facebookId: response.id,
+                        facebookToken: loginInfo.authResponse.accessToken
+                    }
+                    var facebookHeadUrl
+                    try {
+                        facebookHeadUrl = response.picture.data.url
+                    } catch (error) {
+
+                    }
+                    if (facebookHeadUrl) {
+                        urlData.facebookHeadUrl = facebookHeadUrl;
+                    }
+                    if (urlParam.happy) {
+                        urlData.happyCode = urlParam.happy;
+                    }
+
+
+                    $.ajax({
+                        url: "https://app.2loveyou.com:443/xboot/test/v1/initWeb",
+                        dataType: "json",
+                        type: "POST",
+                        contentType: 'application/json;charset=UTF-8',
+                        data: JSON.stringify(urlData),
+                        success: (data) => {
+
+                        }
+                    })
+                }
+            }
+        );
+    }
+</script>
+
+<script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0&appId=288950568740355&autoLogAppEvents=1"></script>
+
+</html>

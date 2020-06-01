@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appdown.aspx">
+      <publishTime>05/07/2020 14:28:27</publishTime>
+    </File>
+    <File Include="apple-app-site-association">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/1.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/10.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/11.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/12.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/13.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/14.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/15.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/16.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/2.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/3.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/4.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/5.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/6.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/7.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/8.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/9.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/17/2012 20:24:44</publishTime>
+    </File>
+    <File Include="bin/WebApplication.dll">
+      <publishTime>05/29/2020 15:21:06</publishTime>
+    </File>
+    <File Include="buddy.aspx">
+      <publishTime>05/29/2020 09:42:13</publishTime>
+    </File>
+    <File Include="cash.aspx">
+      <publishTime>05/29/2020 15:19:07</publishTime>
+    </File>
+    <File Include="cashRecord.aspx">
+      <publishTime>05/29/2020 15:09:33</publishTime>
+    </File>
+    <File Include="css/animation.css">
+      <publishTime>05/15/2020 14:51:19</publishTime>
+    </File>
+    <File Include="css/my.css">
+      <publishTime>05/28/2020 15:42:34</publishTime>
+    </File>
+    <File Include="css/myincome.css">
+      <publishTime>05/29/2020 15:02:14</publishTime>
+    </File>
+    <File Include="css/site.css">
+      <publishTime>05/23/2020 10:18:00</publishTime>
+    </File>
+    <File Include="diamondRecord.aspx">
+      <publishTime>05/29/2020 14:34:26</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/.DS_Store">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/applogo.jpg">
+      <publishTime>04/27/2020 10:03:35</publishTime>
+    </File>
+    <File Include="img/banner.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/body-bg.jpg">
+      <publishTime>04/27/2020 10:03:35</publishTime>
+    </File>
+    <File Include="img/buddy.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/close-g.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/close.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/d-login-bg.png">
+      <publishTime>05/23/2020 09:06:01</publishTime>
+    </File>
+    <File Include="img/d-login-body.png">
+      <publishTime>04/26/2020 17:27:31</publishTime>
+    </File>
+    <File Include="img/d-login-text.png">
+      <publishTime>05/23/2020 09:06:01</publishTime>
+    </File>
+    <File Include="img/default-avatar.jpg">
+      <publishTime>05/15/2020 10:03:29</publishTime>
+    </File>
+    <File Include="img/dialog-bg.png">
+      <publishTime>04/27/2020 10:03:36</publishTime>
+    </File>
+    <File Include="img/download-btn.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/fb-logo.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/help.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/logo.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/myincome/award/5_min_dollar_god.png">
+      <publishTime>05/16/2020 15:07:09</publishTime>
+    </File>
+    <File Include="img/myincome/award/coin.png">
+      <publishTime>05/16/2020 15:07:09</publishTime>
+    </File>
+    <File Include="img/myincome/award/diamond.png">
+      <publishTime>05/16/2020 15:07:09</publishTime>
+    </File>
+    <File Include="img/myincome/award/dollar_god_12_dollar.png">
+      <publishTime>05/16/2020 15:07:09</publishTime>
+    </File>
+    <File Include="img/myincome/award/dollar_red.png">
+      <publishTime>05/16/2020 15:07:09</publishTime>
+    </File>
+    <File Include="img/myincome/award/level_1_dollar_god.png">
+      <publishTime>05/16/2020 15:07:09</publishTime>
+    </File>
+    <File Include="img/myincome/award/new1.png">
+      <publishTime>05/16/2020 15:07:09</publishTime>
+    </File>
+    <File Include="img/myincome/award/next_5_times.png">
+      <publishTime>05/16/2020 15:07:09</publishTime>
+    </File>
+    <File Include="img/myincome/award/overtime.png">
+      <publishTime>05/16/2020 14:59:33</publishTime>
+    </File>
+    <File Include="img/myincome/award/power_of_fortune.png">
+      <publishTime>05/16/2020 15:07:10</publishTime>
+    </File>
+    <File Include="img/myincome/award/received.png">
+      <publishTime>05/16/2020 15:07:09</publishTime>
+    </File>
+    <File Include="img/myincome/award/speed_coin.png">
+      <publishTime>05/16/2020 15:07:09</publishTime>
+    </File>
+    <File Include="img/myincome/balance-bg.png">
+      <publishTime>05/18/2020 15:05:38</publishTime>
+    </File>
+    <File Include="img/myincome/banner-text.png">
+      <publishTime>05/18/2020 15:05:38</publishTime>
+    </File>
+    <File Include="img/myincome/body-bg.jpg">
+      <publishTime>05/18/2020 15:05:39</publishTime>
+    </File>
+    <File Include="img/myincome/bonus12.png">
+      <publishTime>05/18/2020 15:05:39</publishTime>
+    </File>
+    <File Include="img/myincome/btn-buddy.png">
+      <publishTime>05/18/2020 15:05:39</publishTime>
+    </File>
+    <File Include="img/myincome/buddy-a.png">
+      <publishTime>05/18/2020 15:05:39</publishTime>
+    </File>
+    <File Include="img/myincome/buddy.png">
+      <publishTime>05/15/2020 14:45:32</publishTime>
+    </File>
+    <File Include="img/myincome/coin.png">
+      <publishTime>05/15/2020 14:45:43</publishTime>
+    </File>
+    <File Include="img/myincome/dao.png">
+      <publishTime>05/18/2020 15:05:40</publishTime>
+    </File>
+    <File Include="img/myincome/diamond.png">
+      <publishTime>05/18/2020 15:05:40</publishTime>
+    </File>
+    <File Include="img/myincome/dollar_god_1.png">
+      <publishTime>05/15/2020 14:45:40</publishTime>
+    </File>
+    <File Include="img/myincome/dollar_god_12.png">
+      <publishTime>05/15/2020 14:45:32</publishTime>
+    </File>
+    <File Include="img/myincome/dollar_red.png">
+      <publishTime>05/15/2020 14:45:49</publishTime>
+    </File>
+    <File Include="img/myincome/fb-logo.png">
+      <publishTime>05/18/2020 15:05:40</publishTime>
+    </File>
+    <File Include="img/myincome/first.png">
+      <publishTime>05/18/2020 15:05:41</publishTime>
+    </File>
+    <File Include="img/myincome/game-icon.jpg">
+      <publishTime>05/18/2020 15:05:42</publishTime>
+    </File>
+    <File Include="img/myincome/help-yellow.png">
+      <publishTime>05/18/2020 15:05:42</publishTime>
+    </File>
+    <File Include="img/myincome/help.png">
+      <publishTime>05/18/2020 15:05:43</publishTime>
+    </File>
+    <File Include="img/myincome/hg.png">
+      <publishTime>05/18/2020 15:05:43</publishTime>
+    </File>
+    <File Include="img/myincome/home.png">
+      <publishTime>05/15/2020 14:45:37</publishTime>
+    </File>
+    <File Include="img/myincome/icon-bg.png">
+      <publishTime>05/18/2020 15:05:43</publishTime>
+    </File>
+    <File Include="img/myincome/income-a.png">
+      <publishTime>05/18/2020 15:05:44</publishTime>
+    </File>
+    <File Include="img/myincome/income.png">
+      <publishTime>05/18/2020 15:05:44</publishTime>
+    </File>
+    <File Include="img/myincome/login-bg.png">
+      <publishTime>05/18/2020 15:05:44</publishTime>
+    </File>
+    <File Include="img/myincome/logo.png">
+      <publishTime>05/18/2020 15:05:45</publishTime>
+    </File>
+    <File Include="img/myincome/lv.png">
+      <publishTime>05/18/2020 15:05:45</publishTime>
+    </File>
+    <File Include="img/myincome/lv1.png">
+      <publishTime>05/18/2020 15:05:45</publishTime>
+    </File>
+    <File Include="img/myincome/mall15.png">
+      <publishTime>05/18/2020 15:05:46</publishTime>
+    </File>
+    <File Include="img/myincome/moon.png">
+      <publishTime>05/18/2020 15:05:46</publishTime>
+    </File>
+    <File Include="img/myincome/news.png">
+      <publishTime>05/18/2020 15:05:46</publishTime>
+    </File>
+    <File Include="img/myincome/overtime.png">
+      <publishTime>05/18/2020 15:05:47</publishTime>
+    </File>
+    <File Include="img/myincome/p10.png">
+      <publishTime>05/18/2020 15:05:47</publishTime>
+    </File>
+    <File Include="img/myincome/p23.png">
+      <publishTime>05/18/2020 15:05:47</publishTime>
+    </File>
+    <File Include="img/myincome/partner-banner.png">
+      <publishTime>05/18/2020 15:05:48</publishTime>
+    </File>
+    <File Include="img/myincome/partner-bg.jpg">
+      <publishTime>05/18/2020 15:05:49</publishTime>
+    </File>
+    <File Include="img/myincome/partner-btn.png">
+      <publishTime>05/18/2020 15:05:49</publishTime>
+    </File>
+    <File Include="img/myincome/plusfivety.png">
+      <publishTime>05/18/2020 15:05:50</publishTime>
+    </File>
+    <File Include="img/myincome/r.png">
+      <publishTime>05/18/2020 15:05:50</publishTime>
+    </File>
+    <File Include="img/myincome/rep-home.png">
+      <publishTime>05/18/2020 15:05:50</publishTime>
+    </File>
+    <File Include="img/myincome/right-link.png">
+      <publishTime>05/18/2020 15:05:51</publishTime>
+    </File>
+    <File Include="img/myincome/selected.png">
+      <publishTime>05/18/2020 15:05:51</publishTime>
+    </File>
+    <File Include="img/myincome/star.png">
+      <publishTime>05/18/2020 15:05:51</publishTime>
+    </File>
+    <File Include="img/myincome/sun.png">
+      <publishTime>05/18/2020 15:05:51</publishTime>
+    </File>
+    <File Include="img/myincome/task.png">
+      <publishTime>05/18/2020 15:05:52</publishTime>
+    </File>
+    <File Include="img/myincome/tip.png">
+      <publishTime>05/18/2020 15:05:52</publishTime>
+    </File>
+    <File Include="img/myincome/wallet.png">
+      <publishTime>05/18/2020 15:05:53</publishTime>
+    </File>
+    <File Include="img/myincome/zp12.png">
+      <publishTime>05/18/2020 15:05:53</publishTime>
+    </File>
+    <File Include="img/no-1.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/no-2.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/no-3.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/rep.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/title.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/withdraw.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>05/19/2020 17:03:59</publishTime>
+    </File>
+    <File Include="inviteReward.aspx">
+      <publishTime>05/29/2020 09:43:23</publishTime>
+    </File>
+    <File Include="js/CryptoJS.js">
+      <publishTime>05/11/2020 16:34:23</publishTime>
+    </File>
+    <File Include="js/jquery-2.2.4.min.js">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="js/jquery.copy.min.js">
+      <publishTime>05/26/2020 13:24:01</publishTime>
+    </File>
+    <File Include="js/myincome.js">
+      <publishTime>05/26/2020 09:54:31</publishTime>
+    </File>
+    <File Include="js/rem.js">
+      <publishTime>05/14/2020 14:46:09</publishTime>
+    </File>
+    <File Include="js/rem.js.folderdownload">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="message.aspx">
+      <publishTime>05/28/2020 15:36:07</publishTime>
+    </File>
+    <File Include="messageDetail.aspx">
+      <publishTime>05/29/2020 09:43:47</publishTime>
+    </File>
+    <File Include="my.aspx">
+      <publishTime>05/29/2020 09:49:42</publishTime>
+    </File>
+    <File Include="myIncome.aspx">
+      <publishTime>05/29/2020 13:47:09</publishTime>
+    </File>
+    <File Include="page.aspx">
+      <publishTime>05/25/2020 14:04:27</publishTime>
+    </File>
+    <File Include="partner.aspx">
+      <publishTime>05/29/2020 09:44:14</publishTime>
+    </File>
+    <File Include="redPacket.aspx">
+      <publishTime>05/29/2020 09:44:39</publishTime>
+    </File>
+    <File Include="task.aspx">
+      <publishTime>05/29/2020 09:44:52</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>05/29/2020 15:21:07</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

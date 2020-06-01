@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{589D46C3-C806-40FB-8BD3-3816A8F832D3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication</RootNamespace>
+    <AssemblyName>WebApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appdown.aspx" />
+    <Content Include="apple-app-site-association" />
+    <Content Include="buddy.aspx" />
+    <Content Include="cash.aspx" />
+    <Content Include="cashRecord.aspx" />
+    <Content Include="css\animation.css" />
+    <Content Include="css\my.css" />
+    <Content Include="css\myincome.css" />
+    <Content Include="diamondRecord.aspx" />
+    <Content Include="helpCash.aspx" />
+    <Content Include="img\.DS_Store" />
+    <Content Include="img\applogo.jpg" />
+    <Content Include="img\d-login-bg.png" />
+    <Content Include="img\d-login-body.png" />
+    <Content Include="img\d-login-text.png" />
+    <Content Include="img\default-avatar.jpg" />
+    <Content Include="img\myincome\award\5_min_dollar_god.png" />
+    <Content Include="img\myincome\award\coin.png" />
+    <Content Include="img\myincome\award\diamond.png" />
+    <Content Include="img\myincome\award\dollar_god_12_dollar.png" />
+    <Content Include="img\myincome\award\dollar_red.png" />
+    <Content Include="img\myincome\award\level_1_dollar_god.png" />
+    <Content Include="img\myincome\award\new1.png" />
+    <Content Include="img\myincome\award\next_5_times.png" />
+    <Content Include="img\myincome\award\overtime.png" />
+    <Content Include="img\myincome\award\power_of_fortune.png" />
+    <Content Include="img\myincome\award\received.png" />
+    <Content Include="img\myincome\award\speed_coin.png" />
+    <Content Include="img\myincome\balance-bg.png" />
+    <Content Include="img\myincome\banner-text.png" />
+    <Content Include="img\myincome\body-bg.jpg" />
+    <Content Include="img\myincome\bonus12.png" />
+    <Content Include="img\myincome\btn-buddy.png" />
+    <Content Include="img\myincome\dollar_god_12.png" />
+    <Content Include="img\myincome\buddy-a.png" />
+    <Content Include="img\myincome\buddy.png" />
+    <Content Include="img\myincome\dao.png" />
+    <Content Include="img\myincome\diamond.png" />
+    <Content Include="img\myincome\fb-logo.png" />
+    <Content Include="img\myincome\first.png" />
+    <Content Include="img\myincome\game-icon.jpg" />
+    <Content Include="img\myincome\help-yellow.png" />
+    <Content Include="img\myincome\help.png" />
+    <Content Include="img\myincome\hg.png" />
+    <Content Include="img\myincome\home.png" />
+    <Content Include="img\myincome\icon-bg.png" />
+    <Content Include="img\myincome\income-a.png" />
+    <Content Include="img\myincome\income.png" />
+    <Content Include="img\myincome\login-bg.png" />
+    <Content Include="img\myincome\logo.png" />
+    <Content Include="img\myincome\lv.png" />
+    <Content Include="img\myincome\dollar_god_1.png" />
+    <Content Include="img\myincome\lv1.png" />
+    <Content Include="img\myincome\mall15.png" />
+    <Content Include="img\myincome\moon.png" />
+    <Content Include="img\myincome\news.png" />
+    <Content Include="img\myincome\coin.png" />
+    <Content Include="img\myincome\overtime.png" />
+    <Content Include="img\myincome\p10.png" />
+    <Content Include="img\myincome\p23.png" />
+    <Content Include="img\myincome\partner-banner.png" />
+    <Content Include="img\myincome\partner-bg.jpg" />
+    <Content Include="img\myincome\partner-btn.png" />
+    <Content Include="img\myincome\plusfivety.png" />
+    <Content Include="img\myincome\r.png" />
+    <Content Include="img\myincome\rep-home.png" />
+    <Content Include="img\myincome\right-link.png" />
+    <Content Include="img\myincome\selected.png" />
+    <Content Include="img\myincome\star.png" />
+    <Content Include="img\myincome\sun.png" />
+    <Content Include="img\myincome\task.png" />
+    <Content Include="img\myincome\tip.png" />
+    <Content Include="img\myincome\wallet.png" />
+    <Content Include="img\myincome\dollar_red.png" />
+    <Content Include="img\myincome\zp12.png" />
+    <Content Include="inviteReward.aspx" />
+    <Content Include="js\jquery.copy.min.js" />
+    <Content Include="js\myincome.js" />
+    <Content Include="js\rem.js" />
+    <Content Include="js\rem.js.folderdownload" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="message.aspx" />
+    <Content Include="messageDetail.aspx" />
+    <Content Include="my.aspx" />
+    <Content Include="myIncome.aspx" />
+    <Content Include="partner.aspx" />
+    <Content Include="redPacket.aspx" />
+    <Content Include="task.aspx" />
+    <Content Include="web.config" />
+    <None Include="Properties\PublishProfiles\houge.pubxml" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="avatar\1.jpg" />
+    <Content Include="avatar\10.jpg" />
+    <Content Include="avatar\11.jpg" />
+    <Content Include="avatar\12.jpg" />
+    <Content Include="avatar\13.jpg" />
+    <Content Include="avatar\14.jpg" />
+    <Content Include="avatar\15.jpg" />
+    <Content Include="avatar\16.jpg" />
+    <Content Include="avatar\2.jpg" />
+    <Content Include="avatar\3.jpg" />
+    <Content Include="avatar\4.jpg" />
+    <Content Include="avatar\5.jpg" />
+    <Content Include="avatar\6.jpg" />
+    <Content Include="avatar\7.jpg" />
+    <Content Include="avatar\8.jpg" />
+    <Content Include="avatar\9.jpg" />
+    <Content Include="css\site.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="img\banner.png" />
+    <Content Include="img\body-bg.jpg" />
+    <Content Include="img\buddy.png" />
+    <Content Include="img\close-g.png" />
+    <Content Include="img\close.png" />
+    <Content Include="img\dialog-bg.png" />
+    <Content Include="img\download-btn.png" />
+    <Content Include="img\fb-logo.png" />
+    <Content Include="img\help.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\no-1.png" />
+    <Content Include="img\no-2.png" />
+    <Content Include="img\no-3.png" />
+    <Content Include="img\rep.png" />
+    <Content Include="img\title.png" />
+    <Content Include="img\withdraw.png" />
+    <Content Include="index.html" />
+    <Content Include="js\jquery-2.2.4.min.js" />
+    <Content Include="page.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="appdown.aspx.cs">
+      <DependentUpon>appdown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="appdown.aspx.designer.cs">
+      <DependentUpon>appdown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buddy.aspx.cs">
+      <DependentUpon>buddy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buddy.aspx.designer.cs">
+      <DependentUpon>buddy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cash.aspx.cs">
+      <DependentUpon>cash.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cash.aspx.designer.cs">
+      <DependentUpon>cash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cashRecord.aspx.cs">
+      <DependentUpon>cashRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cashRecord.aspx.designer.cs">
+      <DependentUpon>cashRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="diamondRecord.aspx.cs">
+      <DependentUpon>diamondRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="diamondRecord.aspx.designer.cs">
+      <DependentUpon>diamondRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="helpCash.aspx.cs">
+      <DependentUpon>helpCash.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="helpCash.aspx.designer.cs">
+      <DependentUpon>helpCash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inviteReward.aspx.cs">
+      <DependentUpon>inviteReward.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inviteReward.aspx.designer.cs">
+      <DependentUpon>inviteReward.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="message.aspx.cs">
+      <DependentUpon>message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="message.aspx.designer.cs">
+      <DependentUpon>message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="messageDetail.aspx.cs">
+      <DependentUpon>messageDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="messageDetail.aspx.designer.cs">
+      <DependentUpon>messageDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="my.aspx.cs">
+      <DependentUpon>my.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="my.aspx.designer.cs">
+      <DependentUpon>my.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myIncome.aspx.cs">
+      <DependentUpon>myIncome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myIncome.aspx.designer.cs">
+      <DependentUpon>myIncome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page.aspx.cs">
+      <DependentUpon>page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page.aspx.designer.cs">
+      <DependentUpon>page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="partner.aspx.cs">
+      <DependentUpon>partner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="partner.aspx.designer.cs">
+      <DependentUpon>partner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="redPacket.aspx.cs">
+      <DependentUpon>redPacket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="redPacket.aspx.designer.cs">
+      <DependentUpon>redPacket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="task.aspx.cs">
+      <DependentUpon>task.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="task.aspx.designer.cs">
+      <DependentUpon>task.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56918</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56918/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

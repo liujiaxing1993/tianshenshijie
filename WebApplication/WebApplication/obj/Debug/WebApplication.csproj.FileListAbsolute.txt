@@ -1,0 +1,21 @@
+D:\ProjectManeger\11-游戏\5-Knight Errant\移动网站\wwwroot\WebApplication\WebApplication\bin\WebApplication.dll.config
+D:\ProjectManeger\11-游戏\5-Knight Errant\移动网站\wwwroot\WebApplication\WebApplication\bin\WebApplication.dll
+D:\ProjectManeger\11-游戏\5-Knight Errant\移动网站\wwwroot\WebApplication\WebApplication\bin\WebApplication.pdb
+D:\ProjectManeger\11-游戏\5-Knight Errant\移动网站\wwwroot\WebApplication\WebApplication\bin\Newtonsoft.Json.dll
+D:\ProjectManeger\11-游戏\5-Knight Errant\移动网站\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.csproj.CoreCompileInputs.cache
+D:\ProjectManeger\11-游戏\5-Knight Errant\移动网站\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.csproj.CopyComplete
+D:\ProjectManeger\11-游戏\5-Knight Errant\移动网站\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.dll
+D:\ProjectManeger\11-游戏\5-Knight Errant\移动网站\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.pdb
+D:\ProjectManeger\11-游戏\5-Knight Errant\移动网站\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.csprojAssemblyReference.cache
+E:\工作传递文件\wwwroot\wwwroot\WebApplication\WebApplication\bin\WebApplication.dll
+E:\工作传递文件\wwwroot\wwwroot\WebApplication\WebApplication\bin\WebApplication.pdb
+E:\工作传递文件\wwwroot\wwwroot\WebApplication\WebApplication\bin\Newtonsoft.Json.dll
+E:\工作传递文件\wwwroot\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.dll
+E:\工作传递文件\wwwroot\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.pdb
+E:\工作传递文件\wwwroot\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+E:\天神世界\wwwroot\WebApplication\WebApplication\bin\WebApplication.dll
+E:\天神世界\wwwroot\WebApplication\WebApplication\bin\WebApplication.pdb
+E:\天神世界\wwwroot\WebApplication\WebApplication\bin\Newtonsoft.Json.dll
+E:\天神世界\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+E:\天神世界\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.dll
+E:\天神世界\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.pdb

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\ProjectManeger\11-游戏\5-Knight Errant\移动网站\wwwroot\WebApplication\WebApplication\bin\Release\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="1.html">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="111.zip">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="appdown.aspx">
+      <publishTime>05/07/2020 14:28:27</publishTime>
+    </File>
+    <File Include="apple-app-site-association">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/1.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/10.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/11.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/12.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/13.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/14.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/15.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/16.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/2.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/3.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/4.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/5.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/6.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/7.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/8.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="avatar/9.jpg">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/17/2012 20:24:44</publishTime>
+    </File>
+    <File Include="bin/URLRewriter.dll">
+      <publishTime>03/04/2018 20:41:04</publishTime>
+    </File>
+    <File Include="bin/WebApplication.dll">
+      <publishTime>05/09/2020 13:32:36</publishTime>
+    </File>
+    <File Include="bin/WebApplication.pdb">
+      <publishTime>05/09/2020 13:32:36</publishTime>
+    </File>
+    <File Include="css/site.css">
+      <publishTime>04/27/2020 11:43:03</publishTime>
+    </File>
+    <File Include="domain_check_3575880.zip">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/.DS_Store">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/applogo.jpg">
+      <publishTime>04/27/2020 10:03:35</publishTime>
+    </File>
+    <File Include="img/applogo.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/applogo.png.bak">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/banner.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/body-bg.jpg">
+      <publishTime>04/27/2020 10:03:35</publishTime>
+    </File>
+    <File Include="img/body-bg.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/buddy.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/close-g.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/close.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/d-login-bg.png">
+      <publishTime>04/27/2020 10:03:36</publishTime>
+    </File>
+    <File Include="img/d-login-body.png">
+      <publishTime>04/26/2020 17:27:31</publishTime>
+    </File>
+    <File Include="img/d-login-text.png">
+      <publishTime>04/26/2020 17:27:31</publishTime>
+    </File>
+    <File Include="img/dialog-bg.png">
+      <publishTime>04/27/2020 10:03:36</publishTime>
+    </File>
+    <File Include="img/download-btn.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/fb-logo.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/help.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/logo.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/no-1.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/no-2.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/no-3.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/rep.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/title.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="img/withdraw.png">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>05/09/2020 13:32:30</publishTime>
+    </File>
+    <File Include="js/jquery-2.2.4.min.js">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="js/rem.js.folderdownload">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="page.aspx">
+      <publishTime>05/09/2020 10:43:14</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/24/2020 16:06:39</publishTime>
+    </File>
+    <File Include="wydts-debug.apk">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="wydts-release.apk">
+      <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
