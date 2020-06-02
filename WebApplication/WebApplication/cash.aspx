@@ -259,7 +259,7 @@
                     // 兑换1美元所需钻石
                     diamond_rate = data.result.diamond_rate;
                     // 当前钻石数
-                    diamonds = data.result.diamonds;
+                    diamonds =parseInt(data.result.diamonds);
                     // 已投资钻石数
                     var invested = data.result.invested;
                     // 24小时前的投资总数

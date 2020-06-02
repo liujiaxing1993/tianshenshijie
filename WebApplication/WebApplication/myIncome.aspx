@@ -70,11 +70,11 @@
         </div>
         <div class="top-right-btn">
             <a href="inviteReward.aspx">
-                <img src="img/myincome/bowl.png"></a>
+                <img class="doudun" src="img/myincome/bowl.png"></a>
         </div>
         <div class="top-icon-red">
             <a href="redPacket.aspx">
-                <img src="img/myincome/btn-red.png"></a>
+                <img class="doudun" src="img/myincome/btn-red.png"></a>
         </div>
 
         <div class="banner">
@@ -283,6 +283,7 @@
         js.src = "//connect.facebook.net/zh-TW/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
 
     var start = 0;
     var end = 0;

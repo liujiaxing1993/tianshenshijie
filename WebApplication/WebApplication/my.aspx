@@ -548,6 +548,8 @@
                         console.log(data);
                         CloseInvitedSet();
                         TipPrompt('邀請碼填寫成功');
+                        $("#invited").html('已填寫');
+                        $('#invited').attr("class", "right");
                     } else {
                         console.log(data.code + "--" + data.message);
                         alert(data.message);
@@ -608,6 +610,9 @@
                         if (result.result) {
                             CloseEmailSet();
                             TipPrompt('綁定郵箱成功');
+                            $("#isEmailBind").html('已綁定');
+                            $('#isEmailBind').attr("class", "right");
+                            $('#emailSet').val(emailSet);
                         } else {
                             alert(result.message);
                         }
