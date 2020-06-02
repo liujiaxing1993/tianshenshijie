@@ -68,22 +68,22 @@
       <publishTime>07/17/2012 20:24:44</publishTime>
     </File>
     <File Include="bin/WebApplication.dll">
-      <publishTime>05/29/2020 15:21:06</publishTime>
+      <publishTime>06/02/2020 10:30:22</publishTime>
     </File>
     <File Include="buddy.aspx">
-      <publishTime>05/29/2020 09:42:13</publishTime>
+      <publishTime>06/01/2020 13:24:45</publishTime>
     </File>
     <File Include="cash.aspx">
-      <publishTime>05/29/2020 15:19:07</publishTime>
+      <publishTime>06/01/2020 13:24:53</publishTime>
     </File>
     <File Include="cashRecord.aspx">
-      <publishTime>05/29/2020 15:09:33</publishTime>
+      <publishTime>06/01/2020 13:25:26</publishTime>
     </File>
     <File Include="css/animation.css">
       <publishTime>05/15/2020 14:51:19</publishTime>
     </File>
     <File Include="css/my.css">
-      <publishTime>05/28/2020 15:42:34</publishTime>
+      <publishTime>06/02/2020 10:09:55</publishTime>
     </File>
     <File Include="css/myincome.css">
       <publishTime>05/29/2020 15:02:14</publishTime>
@@ -92,10 +92,16 @@
       <publishTime>05/23/2020 10:18:00</publishTime>
     </File>
     <File Include="diamondRecord.aspx">
-      <publishTime>05/29/2020 14:34:26</publishTime>
+      <publishTime>06/01/2020 13:25:34</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>04/22/2020 16:50:42</publishTime>
+    </File>
+    <File Include="helpCash.aspx">
+      <publishTime>06/01/2020 09:04:43</publishTime>
+    </File>
+    <File Include="helpCenter.aspx">
+      <publishTime>06/02/2020 10:17:52</publishTime>
     </File>
     <File Include="img/.DS_Store">
       <publishTime>04/22/2020 16:50:42</publishTime>
@@ -365,16 +371,16 @@
       <publishTime>04/22/2020 16:50:42</publishTime>
     </File>
     <File Include="message.aspx">
-      <publishTime>05/28/2020 15:36:07</publishTime>
+      <publishTime>06/01/2020 13:26:19</publishTime>
     </File>
     <File Include="messageDetail.aspx">
-      <publishTime>05/29/2020 09:43:47</publishTime>
+      <publishTime>06/01/2020 13:26:24</publishTime>
     </File>
     <File Include="my.aspx">
-      <publishTime>05/29/2020 09:49:42</publishTime>
+      <publishTime>06/02/2020 10:22:38</publishTime>
     </File>
     <File Include="myIncome.aspx">
-      <publishTime>05/29/2020 13:47:09</publishTime>
+      <publishTime>06/02/2020 10:29:35</publishTime>
     </File>
     <File Include="page.aspx">
       <publishTime>05/25/2020 14:04:27</publishTime>
@@ -382,14 +388,20 @@
     <File Include="partner.aspx">
       <publishTime>05/29/2020 09:44:14</publishTime>
     </File>
+    <File Include="privacyPolicy.aspx">
+      <publishTime>06/02/2020 10:21:49</publishTime>
+    </File>
     <File Include="redPacket.aspx">
       <publishTime>05/29/2020 09:44:39</publishTime>
     </File>
+    <File Include="serviceAgreement.aspx">
+      <publishTime>06/02/2020 10:20:38</publishTime>
+    </File>
     <File Include="task.aspx">
-      <publishTime>05/29/2020 09:44:52</publishTime>
+      <publishTime>06/01/2020 14:22:13</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>05/29/2020 15:21:07</publishTime>
+      <publishTime>06/02/2020 10:30:22</publishTime>
     </File>
   </ItemGroup>
 </Project>

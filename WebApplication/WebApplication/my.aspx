@@ -60,7 +60,7 @@
                     <div class="lv-icon"><span id="level">-</span></div>
                     <span id="levelTitle">--</span>
                 </div>
-                <div class="help-center">
+                <div class="help-center" onclick="GotoHelpCenter()">
                     <i class="help-icon">
                         <img src="img/myincome/my/help-w.png"></i>幫助中心
                 </div>
@@ -174,9 +174,9 @@
             </a>
         </div>
         <div class="panel my-list">
-            <a href="#"><i class="icon-list">
+            <a href="serviceAgreement.aspx"><i class="icon-list">
                 <img src="img/myincome/my/tip.png"></i>天神世界服務協議</a>
-            <a href="#"><i class="icon-list">
+            <a href="privacyPolicy.aspx"><i class="icon-list">
                 <img src="img/myincome/my/tip.png"></i>天神世界隱私政策</a>
         </div>
     </div>
@@ -666,6 +666,11 @@
             return false;
         }
         return true;
+    }
+
+    // 跳转帮助中心
+    function GotoHelpCenter() {
+        location.href = document.location.origin + "/helpCenter.aspx"
     }
 
     var max_god_level_str = {

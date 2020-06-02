@@ -47,6 +47,8 @@
                     <img src="img/myincome/news.png"></a>
                 <a href="task.aspx">
                     <img src="img/myincome/task.png"></a>
+                <a href="my.aspx">
+                    <img src="img/myincome/my.png"></a>
             </div>
         </div>
         <div class="panel detail m-t10">

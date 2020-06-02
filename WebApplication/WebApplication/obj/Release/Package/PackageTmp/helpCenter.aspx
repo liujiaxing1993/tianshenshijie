@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="diamondRecord.aspx.cs" Inherits="WebApplication.diamondRecord" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="helpCenter.aspx.cs" Inherits="WebApplication.helpCenter" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/myincome.css">
     <link rel="stylesheet" href="css/animation.css">
-    <title>鑽石記錄-天神世界</title>
+    <link rel="stylesheet" href="css/my.css">
+    <title>幫助中心-天神世界</title>
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/myincome.js"></script>
     <script src="js/rem.js"></script>
@@ -28,7 +29,7 @@
         </div>
         <button class="pull-right" type="button" onclick="downJump()">下載</button>
     </div>
-    <div id="main" class="main">
+    <div class="main">
         <div class="top-bar">
             <a class="rep-home" href="javascript:history.back(-1)">
                 <img src="img/myincome/rep-home.png">返回</a>
@@ -39,26 +40,9 @@
         <div class="top">
             <a>
                 <img class="logo" src="img/myincome/logo.png"></a>
-            <div class="right-btn">
-                <a href="partner.aspx">
-                    <img src="img/myincome/btn-buddy.png"></a>
-                <a href="message.aspx">
-                    <img src="img/myincome/news.png"></a>
-                <a href="task.aspx">
-                    <img src="img/myincome/task.png"></a>
-                <a href="my.aspx">
-                    <img src="img/myincome/my.png"></a>
-            </div>
         </div>
-
-        <div class="panel m-t10">
-            <h1 class="panel-title">鑽石記錄</h1>
-            <div id="messageList" class="list record">
-                
-            </div>
+        <div id="doc" class="panel detail m-t10">
         </div>
-        <div id="caseud"></div>
-
 
     </div>
 </body>
@@ -92,46 +76,23 @@
         });
     }
 
-    var this_page_size = 20;
-    var this_page_no = 1;
-    var addstate = true;
-
     // 获取user
     var userTianShen = JSON.parse(getCookie("userTianShen"));
 
     if (userTianShen) {
         console.log(userTianShen);
-        WalletDiamondRecord(this_page_size, this_page_no);
-        this_page_no++;
+        // 获取文章
+        GetDocContent();
     } else {
         console.log("未获取到cookie");
     }
 
-    $('#main').on('scroll', function () {
-        //获取当前加载更多按钮距离顶部的距离
-        var bottomsubmit = $('#caseud').offset().top;
-        //获取当前页面底部距离顶部的高度距离
-        var nowtop = $('#main').scrollTop() + $(window).height();
-        if (nowtop > bottomsubmit) {
-            if (addstate) {
-                addstate = false;
-                WalletDiamondRecord(this_page_size, this_page_no);
-                this_page_no++;
-            }
-        }
-    })
-
-
-    /**
-     * post 获取钱包钻石记录
-     * @param page_size  {number}
-     * @param page_no  {number}
-     */
-    function WalletDiamondRecord(page_size, page_no) {
+    // 获取文章
+    function GetDocContent() {
         var urlData = {
-            "playerAccountService.diamondRecords": {
-                page_size: page_size,
-                page_no: page_no
+            "BaseStringDataService.getByKey": {
+                key: "帮助中心",
+                language: "tw"
             }
         }
         $.ajax({
@@ -145,32 +106,33 @@
             data: JSON.stringify(urlData),
             success: function (data) {
                 if (data.code === 200) {
-                    console.log("获取钱包钻石记录");
+                    console.log("获取文章");
                     console.log(data);
+                    var docList = data.result.list;
+                    if (docList.length > 0) {
+                        var doc = ''
+                        for (var i = 0; i < docList.length; i++) {
+                            switch (docList[i].type) {
+                                case 0:
+                                    doc = doc + ' <div class="help-text">' + docList[i].content + '</div> ';
+                                    break;
+                                case 1:
+                                    doc = doc + ' <div class="first-heading">' + docList[i].content + '</div> ';
+                                    break;
+                                case 2:
+                                    doc = doc + ' <div class="last-heading">' + docList[i].content + '</div> ';
+                                    break;
+                                case 3:
+                                    doc = doc + ' <div class="last-heading">' + docList[i].content + '</div> ';
+                                    break;
+                                case 4:
+                                    doc = doc + ' <div class="last-heading">' + docList[i].content + '</div> ';
+                                    break;
 
-                    var messageList = data.result.list;
-                    if (messageList.length > 0) {
-                        addstate = true;
-                        for (var i = 0; i < messageList.length; i++) {
-                            var liHtml = '';
-                            liHtml = liHtml + ' <a> ';
-                            liHtml = liHtml + ' <h1> ' + messageList[i].title;
-                            liHtml = liHtml + ' <span class="date">' + DisposeTime(messageList[i].date) + '</span> ';
-                            liHtml = liHtml + ' </h1> ';
-                            if (Number(messageList[i].diamonds) > 0) {
-
-                                liHtml = liHtml + ' <div class="record-money txt-income">+' + messageList[i].diamonds + '<img src="img/myincome/diamond.png"></div>';
-                            } else {
-                                liHtml = liHtml + ' <div class="record-money">' + messageList[i].diamonds + '<img src="img/myincome/diamond.png"></div>';
                             }
-
-                            liHtml = liHtml + '  </a> ';
-                            jQuery("#messageList").append(liHtml);
                         }
-                    } else {
-                        addstate = false;
+                        jQuery("#doc").append(doc);
                     }
-
                 } else {
                     console.log(data.code + "--" + data.message);
                 }
@@ -183,15 +145,10 @@
         })
     }
 
-    // 处理时间
-    function DisposeTime(times) {
-        // "2020-05-14 17:32:16"
-        var timearr = times.split(":");
-        var timestr = timearr[0] + ":" + timearr[1]
-        return timestr
-    }
+
 </script>
 <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0&appId=288950568740355&autoLogAppEvents=1"></script>
 <script src="https://count.xxxssk.com?1216"></script>
 </html>
+

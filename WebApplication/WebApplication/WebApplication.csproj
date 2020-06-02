@@ -73,6 +73,7 @@
     <Content Include="css\myincome.css" />
     <Content Include="diamondRecord.aspx" />
     <Content Include="helpCash.aspx" />
+    <Content Include="helpCenter.aspx" />
     <Content Include="img\.DS_Store" />
     <Content Include="img\applogo.jpg" />
     <Content Include="img\d-login-bg.png" />
@@ -149,7 +150,9 @@
     <Content Include="my.aspx" />
     <Content Include="myIncome.aspx" />
     <Content Include="partner.aspx" />
+    <Content Include="privacyPolicy.aspx" />
     <Content Include="redPacket.aspx" />
+    <Content Include="serviceAgreement.aspx" />
     <Content Include="task.aspx" />
     <Content Include="web.config" />
     <None Include="Properties\PublishProfiles\houge.pubxml" />
@@ -242,6 +245,13 @@
     <Compile Include="helpCash.aspx.designer.cs">
       <DependentUpon>helpCash.aspx</DependentUpon>
     </Compile>
+    <Compile Include="helpCenter.aspx.cs">
+      <DependentUpon>helpCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="helpCenter.aspx.designer.cs">
+      <DependentUpon>helpCenter.aspx</DependentUpon>
+    </Compile>
     <Compile Include="inviteReward.aspx.cs">
       <DependentUpon>inviteReward.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -291,6 +301,13 @@
     <Compile Include="partner.aspx.designer.cs">
       <DependentUpon>partner.aspx</DependentUpon>
     </Compile>
+    <Compile Include="privacyPolicy.aspx.cs">
+      <DependentUpon>privacyPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privacyPolicy.aspx.designer.cs">
+      <DependentUpon>privacyPolicy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="redPacket.aspx.cs">
       <DependentUpon>redPacket.aspx</DependentUpon>
@@ -298,6 +315,13 @@
     </Compile>
     <Compile Include="redPacket.aspx.designer.cs">
       <DependentUpon>redPacket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="serviceAgreement.aspx.cs">
+      <DependentUpon>serviceAgreement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="serviceAgreement.aspx.designer.cs">
+      <DependentUpon>serviceAgreement.aspx</DependentUpon>
     </Compile>
     <Compile Include="task.aspx.cs">
       <DependentUpon>task.aspx</DependentUpon>

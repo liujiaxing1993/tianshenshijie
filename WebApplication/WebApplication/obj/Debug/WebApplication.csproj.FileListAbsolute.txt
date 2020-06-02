@@ -19,3 +19,8 @@ E:\天神世界\wwwroot\WebApplication\WebApplication\bin\Newtonsoft.Json.dll
 E:\天神世界\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
 E:\天神世界\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.dll
 E:\天神世界\wwwroot\WebApplication\WebApplication\obj\Debug\WebApplication.pdb
+E:\GIT测试\tianshenshijie\WebApplication\WebApplication\bin\WebApplication.dll
+E:\GIT测试\tianshenshijie\WebApplication\WebApplication\bin\WebApplication.pdb
+E:\GIT测试\tianshenshijie\WebApplication\WebApplication\bin\Newtonsoft.Json.dll
+E:\GIT测试\tianshenshijie\WebApplication\WebApplication\obj\Debug\WebApplication.dll
+E:\GIT测试\tianshenshijie\WebApplication\WebApplication\obj\Debug\WebApplication.pdb

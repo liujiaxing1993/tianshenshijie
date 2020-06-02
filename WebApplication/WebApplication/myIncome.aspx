@@ -321,17 +321,14 @@
         nickname: "",
         playerId: ""
     }
-    GameInit();
     // 登陆
     function GameInit(response) {
         console.log("登陆方法");
         console.log(response);
 
         var urlData = {
-            //facebookId: response.authResponse.userID,
-            //facebookToken: response.authResponse.accessToken
-            facebookId: "259205338821729",
-            facebookToken: "token"
+            facebookId: response.authResponse.userID,
+            facebookToken: response.authResponse.accessToken
         }
         $.ajax({
             url: "https://app.2loveyou.com:443/xboot/test/v1/init",

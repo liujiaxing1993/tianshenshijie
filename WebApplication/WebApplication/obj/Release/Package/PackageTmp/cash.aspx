@@ -32,7 +32,7 @@
     </div>
     <div class="main">
         <div class="top-bar">
-            <a class="rep-home" href="myIncome.aspx">
+            <a class="rep-home" href="javascript:history.back(-1)">
                 <img src="img/myincome/rep-home.png">返回</a>
             <div id="Div1" class="fb-like" data-href="https://www.facebook.com/DeityOfLegend/" data-width=""
                 data-layout="button_count" data-action="like" data-size="small" data-share="true">
@@ -48,6 +48,8 @@
                     <img src="img/myincome/news.png"></a>
                 <a href="task.aspx">
                     <img src="img/myincome/task.png"></a>
+                <a href="my.aspx">
+                    <img src="img/myincome/my.png"></a>
             </div>
         </div>
 
