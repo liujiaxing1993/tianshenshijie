@@ -401,12 +401,14 @@
     var jurl = document.location.search + document.location.hash;
     if (jurl == "") {
         console.log("滴滴滴滴")
-        //location.href = urlStr + "?pid=960#QJ22113";
+        location.href = urlStr + "?pid=960#QJ22113";
     } else {
         if (document.location.hash.indexOf("VIP888") != -1) {
-            //location.href = urlStr + "?pid=960#QJ22113";
-        }else {
-            //location.href = urlStr + (document.location.search + document.location.hash);
+            location.href = urlStr + "?pid=960#QJ22113";
+        } else {
+            if (document.location.hash=="") {
+                location.href = urlStr + document.location.search + "#QJ22113";
+            }
         }
     }
     // 判断安卓
@@ -558,8 +560,8 @@
         }
         theRequest.invite = strId.length > 0 ? strId[0] : null;
         theRequest.happyCode = strId.length > 1 ? strId[1] : null;
-        if (theRequest.invite=="#VIP888") {
-            theRequest.invite= "#QJ22113";
+        if (theRequest.invite == "#VIP888") {
+            theRequest.invite = "#QJ22113";
         }
         console.log("Len:" + theRequest.invite + "Xxx:" + theRequest.happyCode);
 
@@ -632,15 +634,15 @@
                         data: JSON.stringify(urlData),
                         success: function (data) {
                             console.log(data.message);
-                    downJump(islogin);
-                }, error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    console.log(XMLHttpRequest);
-                    console.log(textStatus);
-                    console.log(errorThrown);
+                            downJump(islogin);
+                        }, error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            console.log(XMLHttpRequest);
+                            console.log(textStatus);
+                            console.log(errorThrown);
+                        }
+                    })
                 }
-            })
-    }
-    }
+            }
         );
     }
 
@@ -685,7 +687,7 @@
             } else {
                 console.log("不是数字");
             }
-            
+
         } else {
             console.log("数据为空");
         }
@@ -713,7 +715,6 @@
         }
         return ""
     }
-
 </script>
 
 <script async defer crossorigin="anonymous"

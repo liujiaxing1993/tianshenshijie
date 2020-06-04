@@ -54,13 +54,13 @@
         </div>
 
         <div class="tab-cell m-b10 wallet-tabs tab-cell-1">
-            <a class="active tab-btn">现金钱包</a>
-            <a class="tab-btn">钻石钱包</a>
+            <a class="active tab-btn">現金錢包</a>
+            <a class="tab-btn">鉆石錢包</a>
         </div>
         <div class="tab-content">
             <div class="content">
                 <div class="panel invite text-center balance-bg m-t10">
-                    <a href="cashRecord.aspx" class="partner-btn">记录</a>
+                    <a href="cashRecord.aspx" class="partner-btn">記錄</a>
                     <p>當前餘額</p>
                     <div class="nowdipos">
                         <span class="usdao">$</span>
@@ -109,9 +109,9 @@
             <div class="content">
                 <div class="panel invite text-center balance-bg m-t10">
 
-                    <a href="diamondRecord.aspx" class="partner-btn">记录</a>
+                    <a href="diamondRecord.aspx" class="partner-btn">記錄</a>
                     <p>當前鉆石</p>
-                    <div id="diamonds" class="nowdipos">80000<img src="img/myincome/redpacket/zuan.png" class="diamond-icon">(=$100.1408)</div>
+                    <div id="diamonds" class="nowdipos">---<img src="img/myincome/redpacket/zuan.png" class="diamond-icon">(=$---)</div>
                 </div>
                 <div class="panel wallet">
 
@@ -137,15 +137,15 @@
                     </div>
                     <div class="invest-details">
                         <div>
-                            <p>已投資鉆石:<span id="invested">6000</span></p>
-                            <p>今日鉆石收益:<span id="today_interest">150</span></p>
-                            <p>24小時後收益:<span id="total_interest">150</span></p>
+                            <p>已投資鉆石:<span id="invested">---</span></p>
+                            <p>今日鉆石收益:<span id="today_interest">---</span></p>
+                            <p>24小時後收益:<span id="total_interest">---</span></p>
                         </div>
                         <div>
                             <p>
-                                <img src="img/myincome/activeicon.png">活跃度：<span id="activity">7</span>
+                                <img src="img/myincome/activeicon.png">活跃度：<span id="activity">-</span>
                             </p>
-                            <button class="button" onclick="GetDailyInvest()">領取收益</button>
+                            <button id="btnDailyInvest" class="button" onclick="GetDailyInvest()">領取收益</button>
                         </div>
                     </div>
                     <div class="diamond-description">
@@ -259,7 +259,7 @@
                     // 兑换1美元所需钻石
                     diamond_rate = data.result.diamond_rate;
                     // 当前钻石数
-                    diamonds =parseInt(data.result.diamonds);
+                    diamonds = Math.round(data.result.diamonds);
                     // 已投资钻石数
                     var invested = data.result.invested;
                     // 24小时前的投资总数
@@ -270,6 +270,8 @@
                     today_interest = data.result.today_interest;
                     // 每天可领取总的投资收益
                     var total_interest = data.result.total_interest;
+                    // 是否领取钻石收益
+                    var fetch_today_invested = data.result.fetch_today_invested;
 
 
                     $("#balance").html(balance);
@@ -286,11 +288,25 @@
                     $("#total_interest").html(total_interest);
                     $("#activity").html(activity);
 
+                    if (fetch_today_invested) {
+                        $('#btnDailyInvest').attr("disabled", true);
+                        $("#btnDailyInvest").html("今日已領取");
+                    } else {
+                        $('#btnDailyInvest').attr("disabled", false);
+                        $("#btnDailyInvest").html("領取收益");
+                    }
+
                     // 获取app配置
                     GetAppInfo(userTianShen.accessToken);
 
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest);
@@ -345,6 +361,12 @@
                     }
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest);
@@ -379,6 +401,12 @@
 
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest);
@@ -425,6 +453,12 @@
                                 $("#balance").html(thisbalance);
                             } else {
                                 console.log(data.code + "--" + data.message);
+                                if (data.code === 401 && data.message == "token_fail") {
+                                    var logResult = LogInAgain();
+                                    if (logResult) {
+                                        document.location.reload();
+                                    }
+                                }
                             }
                         }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                             console.log(XMLHttpRequest);
@@ -479,6 +513,12 @@
 
                         } else {
                             console.log(data.code + "--" + data.message);
+                            if (data.code === 401 && data.message == "token_fail") {
+                                var logResult = LogInAgain();
+                                if (logResult) {
+                                    document.location.reload();
+                                }
+                            }
                         }
                     }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                         console.log(XMLHttpRequest);
@@ -676,7 +716,7 @@
                 if (data.code === 200) {
                     console.log(data);
                     balance = data.result.balance;
-                    diamonds = data.result.diamonds;
+                    diamonds = Math.round(data.result.diamonds);
                     $("#balance").html(balance);
                     // 钻石钱包
                     var usdRate = (diamonds / diamond_rate).toFixed(4);
@@ -685,6 +725,12 @@
                     $("#diamonds").html(divDiamonds);
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest);
@@ -735,7 +781,7 @@
             success: function (data) {
                 if (data.code === 200) {
                     console.log(data);
-                    diamonds = data.result.diamonds;
+                    diamonds = Math.round(data.result.diamonds);
                     // 钻石钱包
                     var usdRate = (diamonds / diamond_rate).toFixed(4);
                     var divDiamonds = '';
@@ -743,6 +789,12 @@
                     $("#diamonds").html(divDiamonds);
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest);
@@ -781,14 +833,25 @@
             success: function (data) {
                 if (data.code === 200) {
                     console.log(data);
-                    diamonds = data.result.diamonds;
+                    diamonds = Math.round(data.result.diamonds);
                     // 钻石钱包
                     var usdRate = (diamonds / diamond_rate).toFixed(4);
                     var divDiamonds = '';
                     divDiamonds = diamonds + '<img src="img/myincome/redpacket/zuan.png" class="diamond-icon">(=$' + usdRate + ')';
                     $("#diamonds").html(divDiamonds);
+
+                    $('#btnDailyInvest').attr("disabled", true);
+                    $("#btnDailyInvest").html("今日已領取");
+
                 } else {
                     console.log(data.code + "--" + data.message);
+                    TipPrompt(data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest);
@@ -796,6 +859,15 @@
                 console.log(errorThrown);
             }
         })
+    }
+
+
+    // 提示
+    function TipPrompt(tip) {
+        // 复制
+        var tipsHtml = '<div id="share-tips" style="position: fixed;top: 50%;left:50%;background: rgba(0,0,0,.5);border-radius: 4px;margin: 0 auto;color: #fff;z-index: 9999;padding: 5px 10px;font-size: 14px;text-align: center;transform: translate(-50%,-50%);">' + '<p>' + tip + '</p></div>';
+        //提示已复制
+        $("body").append(tipsHtml); setTimeout(function () { $("#share-tips").remove() }, 1000);
     }
 
 </script>

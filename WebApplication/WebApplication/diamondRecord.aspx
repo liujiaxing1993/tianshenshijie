@@ -159,9 +159,9 @@
                             liHtml = liHtml + ' </h1> ';
                             if (Number(messageList[i].diamonds) > 0) {
 
-                                liHtml = liHtml + ' <div class="record-money txt-income">+' + messageList[i].diamonds + '<img src="img/myincome/diamond.png"></div>';
+                                liHtml = liHtml + ' <div class="record-money txt-income">+' + Math.round(messageList[i].diamonds) + '<img src="img/myincome/diamond.png"></div>';
                             } else {
-                                liHtml = liHtml + ' <div class="record-money">' + messageList[i].diamonds + '<img src="img/myincome/diamond.png"></div>';
+                                liHtml = liHtml + ' <div class="record-money">' + Math.round(messageList[i].diamonds) + '<img src="img/myincome/diamond.png"></div>';
                             }
 
                             liHtml = liHtml + '  </a> ';
@@ -173,6 +173,12 @@
 
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
 
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {

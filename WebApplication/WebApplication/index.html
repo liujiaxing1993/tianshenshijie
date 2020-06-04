@@ -275,10 +275,16 @@
     var jurl = document.location.search + document.location.hash;
     if (jurl == "") {
         console.log("滴滴滴滴")
-        location.href = document.location + "page.aspx?pid=960#QJ22113";
+        location.href = document.location.origin + "/page.aspx?pid=960#QJ22113";
     } else {
+        jurl = jurl.replace("?","");
         console.log(document.location);
-        location.href = document.location + "page.aspx" + (document.location.search + document.location.hash);
+        if (document.location.hash == "") {
+            location.href = document.location.origin + "/page.aspx?pid=960&" + jurl + "#QJ22113";
+        }else {
+            location.href = document.location.origin + "/page.aspx?pid=960&" + jurl;
+        }
+       
     }
     function setIdDisplay(id, active) {
         document.getElementById(id).style.display = active;

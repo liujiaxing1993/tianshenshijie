@@ -95,3 +95,59 @@ function getCookie(c_name) {
     }
     return ""
 }
+
+var userLoginAgain = {
+    accessToken: "",
+    bossId: "",
+    guide: 0,
+    headUrl: "",
+    inviteCode: "",
+    nickname: "",
+    playerId: ""
+}
+// 再次登录
+function LogInAgain(){
+    var fbId = getCookie("tianshenFBId");
+    var result = false;
+    var urlData = {
+        facebookId: fbId,
+        facebookToken: "token"
+    }
+    $.ajax({
+        url: "https://app.2loveyou.com:443/xboot/test/v1/init",
+        dataType: "json",
+        type: "POST",
+        async: false,
+        contentType: 'application/json;charset=UTF-8',
+        data: JSON.stringify(urlData),
+        success: function (data) {
+            if (data.code === 200) {
+                console.log(data);
+                userLoginAgain.accessToken = data.result.user.accessToken;
+                userLoginAgain.bossId = data.result.user.bossId;
+                userLoginAgain.guide = data.result.user.guide;
+                userLoginAgain.headUrl = data.result.user.headUrl;
+                userLoginAgain.inviteCode = data.result.user.inviteCode;
+                userLoginAgain.nickname = data.result.user.nickname;
+                userLoginAgain.playerId = data.result.user.playerId;
+                if (!userLoginAgain.headUrl) {
+                    userLoginAgain.headUrl = "img/default-avatar.jpg";
+                }
+                // 设置cookie
+                setCookie("userTianShen", JSON.stringify(userLoginAgain), 7);
+                result = true;
+
+            } else {
+                console.log("再次登录错误："+data.code + "--" + data.message);
+                location.href = document.location.origin + "/myIncome.aspx"
+                
+            }
+        }, error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest);
+            console.log(textStatus);
+            console.log(errorThrown);
+            
+        }
+    })
+    return result; 
+}

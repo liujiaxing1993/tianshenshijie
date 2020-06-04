@@ -308,6 +308,12 @@
 
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
 
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -343,6 +349,12 @@
 
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
 
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -378,6 +390,12 @@
                     $('#facebookHomeUrl').attr('href', facebookHomeUrl);
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest);
@@ -439,6 +457,12 @@
 
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest);
@@ -495,6 +519,12 @@
                             TipPrompt('綁定銀行卡成功');
                         } else {
                             console.log(data.code + "--" + data.message);
+                            if (data.code === 401 && data.message == "token_fail") {
+                                var logResult = LogInAgain();
+                                if (logResult) {
+                                    document.location.reload();
+                                }
+                            }
                             alert(data.message);
                         }
                     }, error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -552,6 +582,12 @@
                         $('#invited').attr("class", "right");
                     } else {
                         console.log(data.code + "--" + data.message);
+                        if (data.code === 401 && data.message == "token_fail") {
+                            var logResult = LogInAgain();
+                            if (logResult) {
+                                document.location.reload();
+                            }
+                        }
                         alert(data.message);
                     }
                 }, error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -618,6 +654,12 @@
                         }
                     } else {
                         console.log(data.code + "--" + data.message);
+                        if (data.code === 401 && data.message == "token_fail") {
+                            var logResult = LogInAgain();
+                            if (logResult) {
+                                document.location.reload();
+                            }
+                        }
                         alert(data.message);
                     }
                 }, error: function (XMLHttpRequest, textStatus, errorThrown) {

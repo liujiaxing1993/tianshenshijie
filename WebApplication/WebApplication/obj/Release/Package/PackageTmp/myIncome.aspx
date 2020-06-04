@@ -327,10 +327,16 @@
         console.log("登陆方法");
         console.log(response);
 
+        var fbId = response.authResponse.userID;
+        var fbToken = response.authResponse.accessToken;
+
         var urlData = {
-            facebookId: response.authResponse.userID,
-            facebookToken: response.authResponse.accessToken
+            facebookId: fbId,
+            facebookToken: fbToken
         }
+        // 设置cookie
+        setCookie("tianshenFBId", fbId, 7);
+
         $.ajax({
             url: "https://app.2loveyou.com:443/xboot/test/v1/init",
             dataType: "json",
@@ -436,6 +442,9 @@
                     $("#profit_today").html(profit_today.toFixed(2));
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        document.location.reload();
+                    }
                 }
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest);
@@ -466,6 +475,9 @@
                     $("#balance").html(balance);
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        document.location.reload();
+                    }
                 }
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest);
@@ -505,6 +517,9 @@
                     }
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        document.location.reload();
+                    }
                 }
 
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -544,6 +559,9 @@
                     }
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        document.location.reload();
+                    }
                 }
 
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {

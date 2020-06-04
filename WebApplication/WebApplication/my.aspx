@@ -32,7 +32,7 @@
     <div id="main" class="main">
         <div class="top-bar">
             <a class="rep-home" href="myIncome.aspx">
-                <img src="img/myincome/rep-home.png">返回首页</a>
+                <img src="img/myincome/rep-home.png">返回首頁</a>
             <div id="Div1" class="fb-like" data-href="https://www.facebook.com/DeityOfLegend/" data-width=""
                 data-layout="button_count" data-action="like" data-size="small" data-share="true">
             </div>
@@ -308,6 +308,12 @@
 
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
 
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -343,6 +349,12 @@
 
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
 
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -378,6 +390,12 @@
                     $('#facebookHomeUrl').attr('href', facebookHomeUrl);
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest);
@@ -439,6 +457,12 @@
 
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest);
@@ -495,6 +519,12 @@
                             TipPrompt('綁定銀行卡成功');
                         } else {
                             console.log(data.code + "--" + data.message);
+                            if (data.code === 401 && data.message == "token_fail") {
+                                var logResult = LogInAgain();
+                                if (logResult) {
+                                    document.location.reload();
+                                }
+                            }
                             alert(data.message);
                         }
                     }, error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -552,6 +582,12 @@
                         $('#invited').attr("class", "right");
                     } else {
                         console.log(data.code + "--" + data.message);
+                        if (data.code === 401 && data.message == "token_fail") {
+                            var logResult = LogInAgain();
+                            if (logResult) {
+                                document.location.reload();
+                            }
+                        }
                         alert(data.message);
                     }
                 }, error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -618,6 +654,12 @@
                         }
                     } else {
                         console.log(data.code + "--" + data.message);
+                        if (data.code === 401 && data.message == "token_fail") {
+                            var logResult = LogInAgain();
+                            if (logResult) {
+                                document.location.reload();
+                            }
+                        }
                         alert(data.message);
                     }
                 }, error: function (XMLHttpRequest, textStatus, errorThrown) {

@@ -236,6 +236,12 @@
                     }
                 } else {
                     console.log(data.code + "--" + data.message);
+                    if (data.code === 401 && data.message == "token_fail") {
+                        var logResult = LogInAgain();
+                        if (logResult) {
+                            document.location.reload();
+                        }
+                    }
                 }
 
             }, error: function (XMLHttpRequest, textStatus, errorThrown) {
