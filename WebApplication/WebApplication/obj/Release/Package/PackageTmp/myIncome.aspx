@@ -323,12 +323,15 @@
         playerId: ""
     }
     // 登陆
+    GameInit();
     function GameInit(response) {
         console.log("登陆方法");
         console.log(response);
 
-        var fbId = response.authResponse.userID;
-        var fbToken = response.authResponse.accessToken;
+        //var fbId = response.authResponse.userID;
+        //var fbToken = response.authResponse.accessToken;
+        var fbId = "1613072425499284";
+        var fbToken = "token";
 
         var urlData = {
             facebookId: fbId,

@@ -9,91 +9,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/site.css" />
-    <title>天神世界</title>
+    <link rel="stylesheet" href="css/sitebr.css" />
+    <title>Tenjin World</title>
     <script src="js/jquery-2.2.4.min.js"></script>
 
     <meta property="og:site_name" content="www.tianshenshijie.com" />
-    <meta property="og:title" content="天神世界——玩著開心，躺著賺錢" />
-    <%=ogUrl %>
-    <%=ogImgstr%>
-    <meta property="og:description" content="天神世界——玩著開心，躺著賺錢" />
+    <meta property="og:title" content="Tenjin World——Ganhar dinheiro nunca foi tão divertido" />
+    <meta property="og:description" content="Tenjin World——Ganhar dinheiro nunca foi tão divertido" />
     <meta property="og:type" content="article" />
-    <meta property="article:author" content="https://www.facebook.com/DeityOfLegend/" />
-    <%=ogContentstr %>
-    <meta property="fb:app_id" content="288950568740355" />
+    <meta property="article:author" content="https://www.facebook.com/TenjinWorld/" />
+    <meta property="og:image" content="https://nothingdb.oss-cn-hongkong.aliyuncs.com/vip/null_w322f2u9.jpg" />
+    <meta property="fb:app_id" content="3043813872350493" />
 </head>
 <body>
     <form id="Form1" runat="server">
         <input type="hidden" runat="server" id="vid" />
     </form>
-    <div id="tishi" class="top-tip">請用手機訪問</div>
+    <div id="tishi" class="top-tip">Por favor, visite com celurar</div>
 
     <div class="main">
         <div class="scroll-list">
             <div class="scrollup">
                 <div class="withdraw-text">
-                    <p>張***成功提现<span>$100.00</span></p>
+                    <p>Ana**Solicitou<span>$100.00</span></p>
                 </div>
                 <div class="withdraw-text">
-                    <p>liu**成功提现<span>$100.00</span></p>
+                    <p>Vera**Solicitou<span>$100.00</span></p>
                 </div>
                 <div class="withdraw-text">
-                    <p>任**成功提现<span>$100.00</span></p>
+                    <p>Sofia**Solicitou<span>$100.00</span></p>
                 </div>
                 <div class="withdraw-text">
-                    <p>李**成功提现<span>$100.00</span></p>
+                    <p>João**Solicitou<span>$100.00</span></p>
                 </div>
                 <div class="withdraw-text">
-                    <p>Au****成功提现<span>$100.00</span></p>
-                </div>
-
-                <div class="withdraw-text">
-                    <p>陳**成功提现<span>$100.00</span></p>
-                </div>
-                <div class="withdraw-text">
-                    <p>王**成功提现<span>$100.00</span></p>
-                </div>
-                <div class="withdraw-text">
-                    <p>Ve****成功提现<span>$100.00</span></p>
-                </div>
-                <div class="withdraw-text">
-                    <p>Ti****成功提现<span>$100.00</span></p>
-                </div>
-                <div class="withdraw-text">
-                    <p>Jo****成功提现<span>$100.00</span></p>
+                    <p>Ricardo**Solicitou<span>$100.00</span></p>
                 </div>
 
                 <div class="withdraw-text">
-                    <p>Va****成功提现<span>$100.00</span></p>
+                    <p>Tiago**Solicitou<span>$100.00</span></p>
                 </div>
                 <div class="withdraw-text">
-                    <p>尹**成功提现<span>$100.00</span></p>
+                    <p>André**Solicitou<span>$100.00</span></p>
                 </div>
                 <div class="withdraw-text">
-                    <p>趙**成功提现<span>$100.00</span></p>
+                    <p>Alex**Solicitou<span>$100.00</span></p>
                 </div>
                 <div class="withdraw-text">
-                    <p>Fang**成功提现<span>$100.00</span></p>
+                    <p>Bruna****Solicitou<span>$100.00</span></p>
                 </div>
                 <div class="withdraw-text">
-                    <p>Aav**成功提现<span>$100.00</span></p>
+                    <p>Bruno****Solicitou<span>$100.00</span></p>
                 </div>
 
                 <div class="withdraw-text">
-                    <p>Fre**成功提现<span>$100.00</span></p>
+                    <p>Italo****Solicitou<span>$100.00</span></p>
                 </div>
                 <div class="withdraw-text">
-                    <p>Wer**成功提现<span>$100.00</span></p>
+                    <p>Sérgio**Solicitou<span>$100.00</span></p>
                 </div>
                 <div class="withdraw-text">
-                    <p>We**成功提现<span>$100.00</span></p>
+                    <p>Thiago**Solicitou<span>$100.00</span></p>
                 </div>
                 <div class="withdraw-text">
-                    <p>侯**成功提现<span>$100.00</span></p>
+                    <p>Olivia**Solicitou<span>$100.00</span></p>
                 </div>
                 <div class="withdraw-text">
-                    <p>Tin**成功提现<span>$100.00</span></p>
+                    <p>Teresa**Solicitou<span>$100.00</span></p>
+                </div>
+
+                <div class="withdraw-text">
+                    <p>Jessica**Solicitou<span>$100.00</span></p>
+                </div>
+                <div class="withdraw-text">
+                    <p>Carlos**Solicitou<span>$100.00</span></p>
+                </div>
+                <div class="withdraw-text">
+                    <p>Henrique**Solicitou<span>$100.00</span></p>
+                </div>
+                <div class="withdraw-text">
+                    <p>Liliana**Solicitou<span>$100.00</span></p>
+                </div>
+                <div class="withdraw-text">
+                    <p>Alice**Solicitou<span>$100.00</span></p>
                 </div>
 
             </div>
@@ -102,16 +100,16 @@
             <div class="dialog-login">
                 <div class="dialog-login-bg">
                     <span class="close-g" onclick="setIdDisplay('diglogLogin','none')"></span>
-                    <img class="text" src="img/d-login-text.png" />
+                    <img class="text" src="img/br/d-login-text.png" />
 
                     <div class="fb-login-btn">
                         <div id="fb-root_login">
-                            <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with"
+                            <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with"
                                 data-auto-logout-link="false" data-use-continue-as="true" onlogin="statusChangeCallback">
                             </div>
                         </div>
                         <p>
-                            登录遊戲後領取驚喜大禮包
+                            Login para receber recompensa surpresa
                         </p>
                     </div>
 
@@ -125,46 +123,46 @@
         <div class="dialog-download">
             <span class="close-g" onclick="setIdDisplay('download','none')"></span>
             <img class="game-avatar" src="img/applogo.jpg" />
-            <h2>下載天神世界<br>
-                立刻開啟你的躺賺之旅</h2>
+            <h2>Download Tenjin World<br>
+                e comece sua jornada de ganhar dinheiro imediatamente</h2>
             <div class="down-btn">
                 <button onclick="downJump()"></button>
-                <p>請到APP領取獎勵</p>
+                <p>Vá a APP para receber recompensa</p>
             </div>
         </div>
     </div>
 
     <%--        非手机访问时显示调试--%>
-    <div class="apple_download">
+    <%--  <div class="apple_download">
         <span class="close-g" onclick="setIdDisplay('download','none')"></span>
         <img class="game-avatar" src="img/applogo.jpg" />
-        <h2>下載天神世界<br>
+        <h2>下載Tenjin World<br>
             立刻開啟你的躺賺之旅</h2>
         <div class="down-btn">
             <button></button>
-            <p>蘋果應用正在飛奔向你趕來</p>
+            <p>蘋果應用正在飛奔向你趕來 </p>
         </div>
-    </div>
+    </div>--%>
 
-    <div id="fb-like" class="fb-like" data-href="https://www.facebook.com/DeityOfLegend/" data-width=""
+    <div id="fb-like" class="fb-like" data-href="https://www.facebook.com/TenjinWorld/" data-width=""
         data-layout="button_count" data-action="like" data-size="small" data-share="true">
     </div>
     <div id="logo" class="logo">
-        <img src="img/logo.png">
+        <img src="img/br/logo.png">
     </div>
     <div class="banner"></div>
     <div id="rank1" class="board-list show dialog gogogo">
         <h1 class="title">
             <img src="img/title.png">
-            提現排行榜
+            Ranking de saque
                 <img src="img/title.png" class="right">
             <span class="close" onclick="setIdDisplay('rank1','none')"></span>
         </h1>
         <table>
             <tr>
-                <th>排名</th>
-                <th>用戶暱稱</th>
-                <th>已提現金額</th>
+                <th>Ranking</th>
+                <th>Nome</th>
+                <th>Dinheiro retirado</th>
             </tr>
             <tr>
                 <td align="center">
@@ -173,7 +171,7 @@
                     <div class="avatar">
                         <img src="/avatar/1.jpg">
                     </div>
-                    <span class="name">張**</span>
+                    <span class="name">Vera**</span>
                 </td>
                 <td align="right" class="text-money">$500.00</td>
             </tr>
@@ -184,7 +182,7 @@
                     <div class="avatar">
                         <img src="/avatar/9.jpg">
                     </div>
-                    <span class="name">任**</span>
+                    <span class="name">Bruno**</span>
                 </td>
                 <td align="right" class="text-money">$500.00</td>
             </tr>
@@ -195,7 +193,7 @@
                     <div class="avatar">
                         <img src="/avatar/3.jpg">
                     </div>
-                    <span class="name">Fang**</span>
+                    <span class="name">Olivia**</span>
                 </td>
                 <td align="right" class="text-money">$500.00</td>
             </tr>
@@ -205,7 +203,7 @@
                     <div class="avatar">
                         <img src="/avatar/2.jpg">
                     </div>
-                    <span class="name">Au****</span>
+                    <span class="name">André****</span>
                 </td>
                 <td align="right" class="text-money">$500.00</td>
             </tr>
@@ -215,7 +213,7 @@
                     <div class="avatar">
                         <img src="/avatar/4.jpg">
                     </div>
-                    <span class="name">趙**</span>
+                    <span class="name">João**</span>
                 </td>
                 <td align="right" class="text-money">$300.00</td>
             </tr>
@@ -225,7 +223,7 @@
                     <div class="avatar">
                         <img src="/avatar/5.jpg">
                     </div>
-                    <span class="name">尹**</span>
+                    <span class="name">Tiago**</span>
                 </td>
                 <td align="right" class="text-money">$300.00</td>
             </tr>
@@ -235,7 +233,7 @@
                     <div class="avatar">
                         <img src="/avatar/6.jpg">
                     </div>
-                    <span class="name">Va****</span>
+                    <span class="name">Carlos****</span>
                 </td>
                 <td align="right" class="text-money">$300.00</td>
             </tr>
@@ -245,7 +243,7 @@
                     <div class="avatar">
                         <img src="/avatar/7.jpg">
                     </div>
-                    <span class="name">陳**</span>
+                    <span class="name">Italo**</span>
                 </td>
                 <td align="right" class="text-money">$300.00</td>
             </tr>
@@ -255,7 +253,7 @@
                     <div class="avatar">
                         <img src="/avatar/8.jpg">
                     </div>
-                    <span class="name">Jo****</span>
+                    <span class="name">Liliana****</span>
                 </td>
                 <td align="right" class="text-money">$300.00</td>
             </tr>
@@ -265,7 +263,7 @@
                     <div class="avatar">
                         <img src="/avatar/10.jpg">
                     </div>
-                    <span class="name">Ti****</span>
+                    <span class="name">Sérgio****</span>
                 </td>
                 <td align="right" class="text-money">$200.00</td>
             </tr>
@@ -274,16 +272,16 @@
     <div id="rank2" class="board-list dialog gogogo">
         <h1 class="title">
             <img src="img/title.png">
-            好友排行榜
+            Ranking dos amigos
                 <img src="img/title.png" class="right">
             <span class="close" onclick="setIdDisplay('rank2','none')"></span>
         </h1>
         <table>
             <thead>
                 <tr>
-                    <th>排名</th>
-                    <th>用戶暱稱</th>
-                    <th>已邀請好友</th>
+                    <th>Ranking</th>
+                    <th>Nome</th>
+                    <th>Amigos convidados</th>
                 </tr>
             </thead>
             <tr>
@@ -293,9 +291,9 @@
                     <div class="avatar">
                         <img src="/avatar/1.jpg">
                     </div>
-                    <span class="name">張**</span>
+                    <span class="name">Henrique**</span>
                 </td>
-                <td align="right" class="text-buddy">5036人</td>
+                <td align="right" class="text-buddy">5036</td>
             </tr>
             <tr>
                 <td align="center">
@@ -304,9 +302,9 @@
                     <div class="avatar">
                         <img src="/avatar/11.jpg">
                     </div>
-                    <span class="name">Li****</span>
+                    <span class="name">Jessica****</span>
                 </td>
-                <td align="right" class="text-buddy">4960人</td>
+                <td align="right" class="text-buddy">4960</td>
 
             </tr>
             <tr>
@@ -316,9 +314,9 @@
                     <div class="avatar">
                         <img src="/avatar/12.jpg">
                     </div>
-                    <span class="name">李**</span>
+                    <span class="name">Teresa**</span>
                 </td>
-                <td align="right" class="text-buddy">4703人</td>
+                <td align="right" class="text-buddy">4703</td>
 
             </tr>
             <tr>
@@ -327,9 +325,9 @@
                     <div class="avatar">
                         <img src="/avatar/13.jpg">
                     </div>
-                    <span class="name">Au****</span>
+                    <span class="name">Olivia****</span>
                 </td>
-                <td align="right" class="text-buddy">4701人</td>
+                <td align="right" class="text-buddy">4701</td>
 
             </tr>
             <tr>
@@ -338,9 +336,9 @@
                     <div class="avatar">
                         <img src="/avatar/14.jpg">
                     </div>
-                    <span class="name">陳**</span>
+                    <span class="name">Thiago**</span>
                 </td>
-                <td align="right" class="text-buddy">4518人</td>
+                <td align="right" class="text-buddy">4518</td>
             </tr>
             <tr>
                 <td align="center"><span class="num">6</span></td>
@@ -348,9 +346,9 @@
                     <div class="avatar">
                         <img src="/avatar/15.jpg">
                     </div>
-                    <span class="name">王**</span>
+                    <span class="name">Sérgio**</span>
                 </td>
-                <td align="right" class="text-buddy">4511人</td>
+                <td align="right" class="text-buddy">4511</td>
             </tr>
             <tr>
                 <td align="center"><span class="num">7</span></td>
@@ -358,9 +356,9 @@
                     <div class="avatar">
                         <img src="/avatar/16.jpg">
                     </div>
-                    <span class="name">Ve****</span>
+                    <span class="name">Italo****</span>
                 </td>
-                <td align="right" class="text-buddy">4510人</td>
+                <td align="right" class="text-buddy">4510</td>
 
             </tr>
         </table>
@@ -370,9 +368,9 @@
             <ul>
                 <li id="button1" class="tab-button" onclick="clickRank('1')"><i>
                     <img
-                        src="img/withdraw.png"></i>提現排行榜</li>
+                        src="img/withdraw.png"></i>Ranking de saque</li>
                 <li id="button2" class="tab-button" onclick="clickRank('2')"><i>
-                    <img src="img/buddy.png"></i>好友排行榜
+                    <img src="img/buddy.png"></i>Ranking dos amigos
                 </li>
             </ul>
         </div>
@@ -385,19 +383,19 @@
             <div id="ggg"
                 style="display: none; width: 100%; color: aliceblue; text-align: center; font-size: 22px; line-height: 40px;"
                 onclick="downJump()">
-                下載天神世界APP
+                Download Tenjin World APP
             </div>
         </div>
         <div class="tip">
-            <img src="img/help.png">通過Facebook登入，與好友互動
+            <img src="img/help.png">Login com o Facebook, Interaja com amigos
         </div>
     </div>
 </body>
 <script>
-    //获取会员ID
+    //获取会员ID 
     document.getElementById("vid").value = document.location.hash;
 
-    var urlStr = "https://www.tianshenshijie.com/page.aspx";
+    var urlStr = "https://www.tianshenshijie.com/pagebr.aspx";
     var jurl = document.location.search + document.location.hash;
     if (jurl == "") {
         console.log("滴滴滴滴")
@@ -406,7 +404,7 @@
         if (document.location.hash.indexOf("VIP888") != -1) {
             location.href = urlStr + "?pid=960#QJ22113";
         } else {
-            if (document.location.hash=="") {
+            if (document.location.hash == "") {
                 location.href = urlStr + document.location.search + "#QJ22113";
             }
         }
@@ -429,12 +427,12 @@
     }
     function urlJump() {
         if (isIos()) {
-            alert("蘋果應用正在審核中，敬請期待");
+            alert("APP da Apple está em revisão, por favor fique atento");
             //return "https://apps.apple.com/hk/app/id1504376912?l=zh&ls=1";
             return "#";
         }
         else if (isAndroid()) return "https://play.google.com/store/apps/details?id=com.asiaxokj.tssj";
-        else return "天神世界，玩著開心，躺著賺錢，恭喜你註冊成功，馬上開啟躺賺人生咯";
+        else return "Aproveite ganho depois do sono, pode ganhar dinheiro jogando";
     }
 
     function setIdDisplay(id, active) {
@@ -496,7 +494,7 @@
 
     window.fbAsyncInit = function () {
         FB.init({
-            appId: '288950568740355',
+            appId: '3043813872350493',
             status: true,
             cookie: true,  // enable cookies to allow the server to access
             // the session
@@ -591,7 +589,7 @@
             }
         } else {
             console.log(urlJ);
-            alert("請使用手機訪問此網址");
+            alert("Por favor, visite com celurar");
         }
     }
     function testAPI(loginInfo, islogin) {
@@ -627,7 +625,7 @@
                     }
                     console.log(urlData.facebookHeadUrl + "|" + urlData.facebookId + "|" + urlData.facebookNickName + "|" + urlData.facebookToken + "|" + urlData.inviteCode + "|" + urlData.happyCode);
                     $.ajax({
-                        url: "https://app.2loveyou.com:443/xboot/test/v1/initWeb",
+                        url: "https://pt.2loveyou.com:443/xboot/test/v1/initWeb",
                         dataType: "json",
                         type: "POST",
                         contentType: 'application/json;charset=UTF-8',
@@ -663,7 +661,7 @@
     // 欢享网提交数据的接口
     function SendEnjoyData() {
         var fid = location.hash.replace("#", "");
-        var gid = "288950568740355";
+        var gid = "3043813872350493";
         var qid = location.search.replace("?pid=", "");
         var userid = 0;
         console.log("fid=" + fid + " qid=" + qid);
@@ -718,7 +716,7 @@
 </script>
 
 <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0&appId=288950568740355&autoLogAppEvents=1"></script>
+    src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v6.0&appId=3043813872350493&autoLogAppEvents=1"></script>
 <script src="https://count.xxxssk.com?1216"></script>
 
 </html>

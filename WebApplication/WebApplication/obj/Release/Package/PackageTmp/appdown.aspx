@@ -314,7 +314,7 @@
                     <span class="name">Ve****</span>
                 </td>
                 <td align="right" class="text-buddy">4510人</td>
-
+                
             </tr>
         </table>
     </div>
@@ -370,7 +370,7 @@
             document.getElementById('button' + idx).className = 'tab-button active';
             document.getElementById('button' + order).className = 'tab-button';
         }
-
+        
         function downJump(islogin) {
             var urlJ = urlJump();
             console.log(urlJ);

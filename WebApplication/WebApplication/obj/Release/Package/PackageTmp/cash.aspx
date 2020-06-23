@@ -54,13 +54,13 @@
         </div>
 
         <div class="tab-cell m-b10 wallet-tabs tab-cell-1">
-            <a class="active tab-btn">现金钱包</a>
-            <a class="tab-btn">钻石钱包</a>
+            <a class="active tab-btn">現金錢包</a>
+            <a class="tab-btn">鉆石錢包</a>
         </div>
         <div class="tab-content">
             <div class="content">
                 <div class="panel invite text-center balance-bg m-t10">
-                    <a href="cashRecord.aspx" class="partner-btn">记录</a>
+                    <a href="cashRecord.aspx" class="partner-btn">記錄</a>
                     <p>當前餘額</p>
                     <div class="nowdipos">
                         <span class="usdao">$</span>
@@ -109,7 +109,7 @@
             <div class="content">
                 <div class="panel invite text-center balance-bg m-t10">
 
-                    <a href="diamondRecord.aspx" class="partner-btn">记录</a>
+                    <a href="diamondRecord.aspx" class="partner-btn">記錄</a>
                     <p>當前鉆石</p>
                     <div id="diamonds" class="nowdipos">---<img src="img/myincome/redpacket/zuan.png" class="diamond-icon">(=$---)</div>
                 </div>
@@ -145,7 +145,7 @@
                             <p>
                                 <img src="img/myincome/activeicon.png">活跃度：<span id="activity">-</span>
                             </p>
-                            <button class="button" onclick="GetDailyInvest()">領取收益</button>
+                            <button id="btnDailyInvest" class="button" onclick="GetDailyInvest()">領取收益</button>
                         </div>
                     </div>
                     <div class="diamond-description">
@@ -270,6 +270,8 @@
                     today_interest = data.result.today_interest;
                     // 每天可领取总的投资收益
                     var total_interest = data.result.total_interest;
+                    // 是否领取钻石收益
+                    var fetch_today_invested = data.result.fetch_today_invested;
 
 
                     $("#balance").html(balance);
@@ -285,6 +287,14 @@
                     $("#today_interest").html(today_interest);
                     $("#total_interest").html(total_interest);
                     $("#activity").html(activity);
+
+                    if (fetch_today_invested) {
+                        $('#btnDailyInvest').attr("disabled", true);
+                        $("#btnDailyInvest").html("今日已領取");
+                    } else {
+                        $('#btnDailyInvest').attr("disabled", false);
+                        $("#btnDailyInvest").html("領取收益");
+                    }
 
                     // 获取app配置
                     GetAppInfo(userTianShen.accessToken);
@@ -829,6 +839,10 @@
                     var divDiamonds = '';
                     divDiamonds = diamonds + '<img src="img/myincome/redpacket/zuan.png" class="diamond-icon">(=$' + usdRate + ')';
                     $("#diamonds").html(divDiamonds);
+
+                    $('#btnDailyInvest').attr("disabled", true);
+                    $("#btnDailyInvest").html("今日已領取");
+
                 } else {
                     console.log(data.code + "--" + data.message);
                     TipPrompt(data.message);

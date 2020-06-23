@@ -71,11 +71,16 @@
     <Content Include="css\animation.css" />
     <Content Include="css\my.css" />
     <Content Include="css\myincome.css" />
+    <Content Include="css\sitebr.css" />
     <Content Include="diamondRecord.aspx" />
     <Content Include="helpCash.aspx" />
     <Content Include="helpCenter.aspx" />
     <Content Include="img\.DS_Store" />
     <Content Include="img\applogo.jpg" />
+    <Content Include="img\br\banner.png" />
+    <Content Include="img\br\d-login-text.png" />
+    <Content Include="img\br\download-btn.png" />
+    <Content Include="img\br\logo.png" />
     <Content Include="img\d-login-bg.png" />
     <Content Include="img\d-login-body.png" />
     <Content Include="img\d-login-text.png" />
@@ -149,6 +154,7 @@
     <Content Include="messageDetail.aspx" />
     <Content Include="my.aspx" />
     <Content Include="myIncome.aspx" />
+    <Content Include="pagebr.aspx" />
     <Content Include="partner.aspx" />
     <Content Include="privacyPolicy.aspx" />
     <Content Include="redPacket.aspx" />
@@ -293,6 +299,13 @@
     </Compile>
     <Compile Include="page.aspx.designer.cs">
       <DependentUpon>page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagebr.aspx.cs">
+      <DependentUpon>pagebr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagebr.aspx.designer.cs">
+      <DependentUpon>pagebr.aspx</DependentUpon>
     </Compile>
     <Compile Include="partner.aspx.cs">
       <DependentUpon>partner.aspx</DependentUpon>
